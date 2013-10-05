@@ -66,8 +66,8 @@ module.exports = (grunt) ->
         src: [ 'src/backbone.list.coffee' ]
         overwrite: true
         replacements: [
-          from: /VERSION: '.*?'/i
-          to: -> "VERSION: '#{ packageVersion() }'"
+          from: /Backbone.List.VERSION = '.*?'/i
+          to: -> "Backbone.List.VERSION = '#{ packageVersion() }'"
         ]
 
       debugJS:
