@@ -56,4 +56,4 @@ for method in ['each', 'contains', 'find', 'filter', 'reject', 'contains',
   Backbone.List::[method] or= _[method]
 
 # This value is managed by Grunt during builds
-Backbone.List.VERSION = '0.0.1'
+Backbone.List.VERSION = '0.0.3'
