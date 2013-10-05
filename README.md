@@ -16,7 +16,6 @@ class List extends Backbone.List
 # Standard invocation
 people = new Base.List [ 'john', 'steve', 'mary' ]
 
-
 # Standart JS Array Methods
 people.pop()
 people.unshift 'jason'
@@ -37,6 +36,7 @@ people.on 'reset', ->
 
 # Backbobne.Collection style event bubbling
 class ViewManager extends Base.List
+  eventNamespace: false
 
 view.viewManager = new ViewManager
 view.viewManager.add subView
