@@ -14,7 +14,7 @@ class List extends Backbone.List
 
 
 # Standard invocation
-people = new Base.List [ 'john', 'steve', 'mary' ]
+people = new Backbone.List [ 'john', 'steve', 'mary' ]
 
 # Standart JS Array Methods
 people.pop()
@@ -35,7 +35,7 @@ people.on 'remove', ->
 people.on 'reset', ->
 
 # Backbobne.Collection style event bubbling
-class ViewManager extends Base.List
+class ViewManager extends Backbone.List
   eventNamespace: false
 
 view.viewManager = new ViewManager
